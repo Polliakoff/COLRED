@@ -67,14 +67,22 @@ header .lklogo>img {
   height: 60px;
 }
 
-header .lklogo>{
-  background: url(../images/avatar.svg) no-repeat center;
+header .lklogo {
+  background: url(../images/avatar.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top 4px right 0px;
-  display: block;
-  width: 40px;
-  height: 40px;
+  background-position: top 0px right 0px;
+  width: 295px;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .lklogo>div {
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  flex-grow: 33;
 }
 
 header .search{
@@ -122,9 +130,10 @@ main {
 }
 
 .listing:hover {
-  margin-top: 10px;
+  margin-top: 5px;
   /*background-color: rgb(71, 59, 248);*/
-  box-shadow: 5px 5px 6px black;
+  /* box-shadow: 5px 5px 6px black; */
+  filter: drop-shadow( 3px 3px 2px rgba(34, 60, 80, 0.2));
 }
 
 .addnew {
@@ -139,6 +148,17 @@ main {
   width:  100%;
 }
 
+.char_logo {
+  width: 163px;
+  height: 192px;
+  padding-right: 3px;
+}
+
+.char_logo>img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 /* footer============================================================ */
 
