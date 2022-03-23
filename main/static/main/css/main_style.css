@@ -94,15 +94,19 @@ main {
   width: 200px;
   height: 300px;
   display: inline-block;
-  background-color: blue;
+  background: url(../images/portrait.svg) no-repeat center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px 0px;
+  /*background-color: blue;
   margin: 40px 40px;
   border-radius: 10px;
-  box-shadow: 3px 3px 5px black;
+  box-shadow: 3px 3px 5px black;*/
 }
 
 .listing:hover {
   margin-top: 10px;
-  background-color: rgb(71, 59, 248);
+  /*background-color: rgb(71, 59, 248);*/
   box-shadow: 5px 5px 6px black;
 }
 
