@@ -18,12 +18,53 @@ body {
 }
 
 header {
-  height: 3rem;
+  height: 50px;
   width: 100%;
   top: 0;
   position: fixed;
   background-color: white;
   box-shadow: 0px 2px 20px 0px rgba(34, 60, 80, 0.2);
+}
+
+header .coach {
+  margin: 0 5%;
+  margin-top: 5px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coach>div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.coach>div {
+  max-height: 40px;
+}
+
+header .logo * {
+  padding: 0 5px;
+}
+
+header .logo>img {
+  height: 40px;
+  width: auto;
+}
+
+header .lklogo>img {
+  background-color: red;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+header .search{
+  background: url(https://app.roll20.net/images/dndstyling/vital-box.svg);
+  /* background-image: url(https://www.pngmart.com/files/3/Search-Button-PNG-File.png); */
 }
 
 main {
