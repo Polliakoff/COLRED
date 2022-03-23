@@ -71,8 +71,9 @@ header .search{
   /* background-image: url(https://www.pngmart.com/files/3/Search-Button-PNG-File.png); */
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center, 50%, 50%;
+  background-position: top 4px right 0px;
   display: block;
+  padding: 16px 55px;
 }
 
 /* main============================================================ */
