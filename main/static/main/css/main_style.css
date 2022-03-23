@@ -17,6 +17,8 @@ body {
   grid-template-rows: 1fr auto;
 }
 
+/* header============================================================ */
+
 header {
   height: 50px;
   width: 100%;
@@ -67,11 +69,42 @@ header .search{
   /* background-image: url(https://www.pngmart.com/files/3/Search-Button-PNG-File.png); */
 }
 
+/* main============================================================ */
+
 main {
+  margin: 0 5%;
   margin-top: 10px;
-  max-width: 1200px;
-  height: 3000px;
+  background-color: blanchedalmond;
 }
+
+.profiles {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.listing {
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  background-color: blue;
+  margin: 40px 40px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px black;
+}
+
+.addnew {
+  display: flex;
+  background-color: unset;
+  align-items: center;
+}
+
+.addnew img{
+  width:  100%;
+}
+
+
+/* footer============================================================ */
 
 footer {
   background-color: black;
@@ -82,7 +115,7 @@ footer {
 
 .about {
   text-align: left;
-  margin: 0 2%;
+  margin: 0 5%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
