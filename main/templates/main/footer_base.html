@@ -6,55 +6,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Подвал</title>
+    <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'main/css/main_style.css' %}">
-    <!-- <meta http-equiv="Refresh" content="30" /> -->
 </head>
 
 <body>
-    <header>
-        <div class="coach">
-            <div class="logo">
-                <img src="{% static 'main/images/SVG_logo.png' %}" alt="COLRED">
-                <div>Создатель и редактор персонажей для Pathfinder 2e</div>
-            </div>
-            <div class="search">поиск</div>
-            <div class="lklogo">
-                <div>Pulnet</div>
-                <img src="" alt="P">
-            </div>
-
-        </div>
-    </header>
+        {% block header %}{% endblock %}
 
     <main>
-        <div class="profiles">
-            <div class="listing"></div>
-            <div class="listing"></div>
-            <div class="listing"></div>
-            <div class="listing"></div>
-            <div class="listing"></div>
-            <div class="listing"></div>
-            <div class="listing"></div>
-            <div class="listing"></div>
-            <div class="listing"></div>
-            <div class="listing"></div>
-            <div class="listing addnew">
-                <img src="https://img2.freepng.ru/20180425/fww/kisspng-plus-and-minus-signs-5ae10740998772.7506031915246968966289.jpg" alt="+">
-                <div>ИМЯБЛЯТЬПРИМЕР</div>
-            </div>
-        </div>
-
-        <p>
-            Как интересно, Как интересно,Как интересно,Как интересно,Как интересно,Как интересно,Как интересно,
-            Как интересно,Как интересно,Как интересно,Как интересно,Как интересно,Как интересно,Как интересно,Как
-            интересно,
-            Как интересно,Как интересно,Как интересно,Как интересно,Как интересно,Как интересно,Как интересно,Как
-            интересно,
-            Как интересно,Как интересно,Как интересно,Как интересно,Как интересно,Как интересно,Как интересно,Как
-            интересно,
-        </p>
-
+        {% block content %}{% endblock %}
     </main>
     <footer>
         <div class="about">
