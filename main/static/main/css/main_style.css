@@ -98,6 +98,7 @@ main {
 .listing:hover {
   margin-top: 10px;
   background-color: rgb(71, 59, 248);
+  box-shadow: 5px 5px 6px black;
 }
 
 .addnew {
