@@ -69,6 +69,10 @@ header .lklogo>img {
 header .search{
   background: url(../images/search_window.svg) no-repeat center;
   /* background-image: url(https://www.pngmart.com/files/3/Search-Button-PNG-File.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center, 50%, 50%;
+  display: block;
 }
 
 /* main============================================================ */
