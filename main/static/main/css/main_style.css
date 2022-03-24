@@ -22,7 +22,7 @@ body {
 }
 
 body {
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   display: grid;
   grid-template-areas: "main" "footer";
   grid-template-rows: 1fr auto;
@@ -59,6 +59,12 @@ header .coach {
   max-height: 60px;
 }
 
+@media screen and (max-width: 1250px) {
+  header .logo>div {
+    display: none;
+  }
+}
+
 header .logo * {
   padding: 0 5px;
 }
@@ -69,7 +75,7 @@ header .logo img {
 }
 
 header .lklogo img {
-  background-color: red;
+  /* background-color: red; */
   border-radius: 60px;
   width: 60px;
   height: 60px;
@@ -133,8 +139,8 @@ header .search input{
 
 main {
   margin: 0 5%;
-  margin-top: 35px;
-  background-color: blanchedalmond;
+  margin-top: 100px;
+  /* background-color: blanchedalmond; */
 }
 
 .profiles {
@@ -151,7 +157,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5px 0px;
-  margin: 10px 10px;
+  margin: 10px 50px;
   /* background-color: aliceblue; */
 }
 
@@ -199,17 +205,20 @@ main {
 footer {
   background-color: black;
   color: white;
-  height: 50px;
+  height: 120px;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
 
 .about {
   text-align: left;
-  margin: 0 5%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: 5px 5%;
 }
+
+
 
 /* login_page============================================================ */
 
