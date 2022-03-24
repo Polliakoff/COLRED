@@ -23,17 +23,37 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.5"
-     inkscape:cx="557"
-     inkscape:cy="506"
+     inkscape:zoom="11.313708"
+     inkscape:cx="206.43099"
+     inkscape:cy="23.334524"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer2" />
   <defs
      id="defs11416" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Слой 2">
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 0.89296874,12.203906 H 116.15208 l 0.29766,130.571874 -23.127876,1.2224 -3.244205,0.0955 -61.702888,-0.6196 -3.717663,0.15485 -22.8797657,-1.20769 z"
+       id="path944" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 2.1166666,150.54791 23.0052144,-0.67129 3.429645,-0.0549 60.906514,0.0808 3.614213,0.0775 22.699487,0.96479 1.30638,10.35182 -0.7184,9.44026 -3.77951,1.24229 -111.738311,-0.76964 z"
+       id="path1306" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.291824"
+       id="path1540"
+       cx="53.285191"
+       cy="3.6482291"
+       rx="2.5373902"
+       ry="2.8764882" />
+  </g>
   <g
      inkscape:label="Слой 1"
      inkscape:groupmode="layer"
