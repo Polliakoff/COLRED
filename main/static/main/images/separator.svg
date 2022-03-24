@@ -23,17 +23,26 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="131.5"
-     inkscape:cy="89"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="222.11992"
+     inkscape:cy="13.965359"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Слой 3">
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -0.01347,3.982836 0.03927,0.0217 0.449585,0.401009 1.08728,-0.11989 2.70784,-1.39733 0.64568,0.749505 1.02314,-0.228014 1.54933,0.67235 0.61388,0.608038 4.05164,0.06431 1.06991,-1.584408 0.88867,-2.11644 0.86529,2.350301 1.6838,0.140317 0.65481,1.157611 13.45283,-0.05846 12.35956,-2.069669 10.52373,2.519851 5.68136,-0.038 -1.46601,-3.136658 3.42606,2.467232 1.14591,-0.970523 2.59585,1.134225 5.18195,-0.152611 17.39636,-0.114721 0.0157,-0.303 V -0.022088 H -0.011402 Z"
+       id="path7529" />
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
