@@ -105,3 +105,11 @@ main {
 .login_main>a{
     margin-top: 20px;
 }
+
+.errorlist {
+    position: absolute;
+    top: 50px;
+    background-color: bisque;
+    border-radius: 5px;
+}
+
