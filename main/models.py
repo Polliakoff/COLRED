@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 class Avatar_of_choice(models.Model):
     name = models.CharField('Название', max_length=50)
-    #usr = models.OneToOneField(User,on_delete=models.CASCADE,primary_key=True,default='blank')
+    usr = models.OneToOneField(User,on_delete=models.CASCADE,default='1',related_name="avatarochka")
 
     def __str__(self):
         return self.name
