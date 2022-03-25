@@ -11,10 +11,12 @@
     </div>
     <div class="login_form">
         <form method="post">
-            <input type="text" placeholder="Логин"> <br>
-            <input type="text" placeholder="Пароль"> <br>
-            <button type="submit">Войти</button>
-            <button type="submit">Зарегистрироваться</button>       
+            {% csrf_token %}
+            {{form}}
+            <div, class = 'button_backing'>
+                <button type="submit", class="conf_button"></button>
+            </div>
+            <a href="/register">Создать аккаунт</a>
         </form>
     </div>
 </div>
