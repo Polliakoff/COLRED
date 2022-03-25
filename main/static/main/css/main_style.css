@@ -272,10 +272,87 @@ footer>div{
 }
 
 .login_form{
-  background-color: aqua;
+  width: 20%;
+  height: auto;
   margin: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  /* background: url(../images/login_page.svg) no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 0px right 0px; */
+}
+
+.login_form > form{
+  /* height: 100px; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .errorlist{
+  
+} */
+/* reg_page==================== */
+.reg_usrnm{
+  margin-bottom: 20px;
+  text-align: center;
+  background: unset;
+  outline: none;
+  border: 0px;
+  font-size: 16px;
+}
+
+.reg_psw1{
+  margin-bottom: 20px;
+  text-align: center;
+  background: unset;
+  outline: none;
+  border: 0px;
+  font-size: 16px;
+}
+
+.reg_psw2{
+  margin-bottom: 20px;
+  text-align: center;
+  background: unset;
+  outline: none;
+  border: 0px;
+  font-size: 16px;
+}
+
+label [for="id_username"]{
+  visibility: hidden;
+}
+
+.button_backing{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 170px;
+  background: url(../images/login_button.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button_backing:hover{
+  height: 100px;
+  width:170px;
+  background: url(../images/login_button_pressed.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.conf_button{
+  height: 100px;
+  width:170px;
+  border: 0;
+  border-radius: 0;
+  background:transparent;
+  appearance: none;
 }

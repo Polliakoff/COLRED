@@ -1,0 +1,23 @@
+{% extends 'main/footer_base.html' %}
+
+{% block content %}
+{% load static %}
+<div class="login_main">
+    <div class="login_logo">
+        <img src="{% static 'main/images/logo.png' %}" alt="COLRED" class = login_logo_image>
+    </div>
+    <div>
+        <h2>Создатель и редактор персонажей для Pathfinder 2E</h2>
+    </div>
+    <div class="login_form">
+        <form method="post">
+            {% csrf_token %}
+            {{form}}
+            <div, class = 'button_backing'>
+                <button type="submit", class="conf_button"></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
