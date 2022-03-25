@@ -15,11 +15,11 @@ class Clr_Rgister_Form(UserCreationForm):
     
     password1 = forms.CharField(
         label="Пароль",
-        widget=forms.PasswordInput(attrs={'class':'reg_psw1', 'type':'password', 'align':'center'}),
+        widget=forms.PasswordInput(attrs={'class':'reg_psw1', 'type':'password', 'align':'center', 'placeholder':'Введите пароль'}),
     )
     password2 = forms.CharField(
         label="Подтвердите пароль",
-        widget=forms.PasswordInput(attrs={'class':'reg_psw2', 'type':'password', 'align':'center'}),
+        widget=forms.PasswordInput(attrs={'class':'reg_psw2', 'type':'password', 'align':'center', 'placeholder':'Повторите пароль'}),
     )
 
     class Meta:
@@ -27,6 +27,7 @@ class Clr_Rgister_Form(UserCreationForm):
         fields = ["username"]
         widgets = {
             'username': forms.TextInput(attrs={
-                'class': 'reg_usrnm'
+                'class': 'reg_usrnm',
+                'placeholder':'Введите логин'
             })
         }
