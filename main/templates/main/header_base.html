@@ -15,14 +15,17 @@
                 <input type="text" placeholder="поиск">
             </div>
         </div>
-        <div class="lklogo">
-            <div>
+        <div class="">
+            <div class="filter_fix lknick">
+                <div class="nickname"></div>
                 <div>{% block username %}{% endblock %}</div>
             </div>
-            <a href="{% url 'lk' %}">
-                <img src="{% get_static_prefix %}{% block ava_image %}{% endblock %}" alt="ava">
+            <a href="{% url 'lk' %}" class="avatar filter_fix">
+                <div>
+                    <img src="{% get_static_prefix %}{% block ava_image %}{% endblock %}" alt="ava">
+                </div>
+                <div></div>
             </a>
-            
         </div>
 
     </div>

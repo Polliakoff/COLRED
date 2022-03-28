@@ -106,30 +106,56 @@ header .logo img {
   width: auto;
 }
 
-header .lklogo img {
-  /* background-color: red; */
-  border-radius: 60px;
+header .lknick {
+  width: 220px;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  display: flex;
+  text-align: center
+}
+
+header .lknick>div:nth-child(2) {
+  margin-top: 5px;
+}
+
+
+header .lknick .nickname {
+  background: url(../images/nickname.svg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: inherit;
+}
+
+.avatar{
   width: 60px;
   height: 60px;
 }
 
-header .lklogo {
-  background: url(../images/avatar.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top 0px right 0px;
-  width: 295px;
-  height: 60px;
-  justify-content: space-between;
-  align-items: center;
+.avatar>div:nth-child(2) {
+  background: url(../images/avatar.svg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
-header .lklogo>div {
+.avatar>div:nth-child(1){
+  background: unset !important;
+}
+
+.avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
+
+/* header .lknick>div {
   padding-top: 5px;
   display: flex;
   justify-content: center;
   flex-grow: 33;
-}
+} */
 
 header .search{
   background: url(../images/search_window.svg);
