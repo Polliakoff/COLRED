@@ -251,3 +251,39 @@ footer>div{
 
 
 
+
+
+/* important============================================================ */
+
+
+.filter_fix {
+  width: 570px;  /* only for login */
+  height: 270px;  /* only for login */
+  display: flex;
+}
+
+.filter_fix>div {
+  flex-basis: 100%;
+}
+
+.filter_fix>div:nth-child(1) {
+  background: url(../images/login_page.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
+
+.filter_fix .shadow{
+  filter: drop-shadow( 3px 3px 2px rgba(34, 60, 80, 0.5));
+}
+
+.filter_fix>div:nth-child(2) {
+  width: 100%;
+  z-index: 999;
+  margin-left: -100%;
+}    
+
+
+
+
+
+
