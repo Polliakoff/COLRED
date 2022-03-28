@@ -1,5 +1,4 @@
 {% extends 'main/footer_base.html' %}
-
 {% block header %}
 {% load static %}
 <header>
@@ -18,10 +17,10 @@
         </div>
         <div class="lklogo">
             <div>
-                <div>Pulnet</div>
+                <div>{% block username %}{% endblock %}</div>
             </div>
-            <a href="#">
-                <img src="" alt="">
+            <a href="{% url 'lk' %}">
+                <img src="{% get_static_prefix %}{% block ava_image %}{% endblock %}" alt="ava">
             </a>
             
         </div>
