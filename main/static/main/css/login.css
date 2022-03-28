@@ -35,30 +35,15 @@ main {
     height: auto;
 }
 
-.form_back {
-    background: url(../images/login_page.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 570px;
-    height: 270px;
-    filter: drop-shadow( 3px 3px 2px rgba(34, 60, 80, 0.5));
-}
-
 .login_form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: -275px !important;
-    z-index: 9999;
 }
 
 .login_form label {
     display: none;
-}
-
-.login_form>div {
-    filter: drop-shadow( 3px 3px 2px rgba(34, 60, 80, 0));
 }
 
 .py_form {
@@ -86,23 +71,27 @@ main {
     background: unset;
     border: 0px;
     cursor: pointer;
+    width: 85px;
+    height: 70px;
 }
 
 .button_backing {
-    width: 85px;
-    height: 70px;
-    background: url(../images/login_button.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(../images/login_button.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
 .conf_button:hover .button_backing {
-    background: url(../images/login_button_pressed.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(../images/login_button_pressed.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
-.login_main>a{
+.conf_button>div:nth-child(2) {
+    margin-top: 50px;
+}
+
+.login_main>p{
     margin-top: 20px;
 }
 
@@ -112,4 +101,5 @@ main {
     background-color: bisque;
     border-radius: 5px;
 }
+
 
