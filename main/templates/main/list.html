@@ -1,4 +1,12 @@
 {% extends 'main/header_base.html' %}
+{% block list %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/css/list.css' %}">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous">
+    </script>
+<!-- <script type="text/javascript" src="{% static 'main/js/login.js' %}"></script> -->
+{% endblock %}
 
 {% block title %}
 Redactor
@@ -11,5 +19,5 @@ Redactor
 {% block ava_image %}main/images/avatars/{{ avatar }}.png{% endblock %}
 
 {% block content %}
-<p>[Redacted]</p>
+
 {% endblock %}
