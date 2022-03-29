@@ -1,5 +1,5 @@
 $( document ).ready(function() {
     $('#id_username').attr('placeholder', 'Логин');
     $('#id_password').attr('placeholder', 'Пароль');
-    $('button.conf_button').css('margin-top', '53px');
+    $('.conf_button_b').css('margin-top', '53px');
 });

@@ -8,9 +8,9 @@
     color: black;
 }
 
-.list input::placeholder {
-    /* opacity: 1; */
-}
+/* .list input::placeholder {
+    opacity: 1; 
+} */
 
 .book {
     background: url(../images/list/list_book_empty.svg) no-repeat;
@@ -102,7 +102,7 @@
 
 .down {
     width: 100%;
-    height: 24.5vw;
+    height: 19.5vw;
 }
 
 .char_info {
@@ -111,6 +111,7 @@
     justify-content: space-between;
     align-items: center;
     height: inherit;
+    height: 18vw;
 }
 
 .char_info .placeholder {
@@ -120,4 +121,5 @@
 
 .char_info .name {
     height: 1.4vw;
+    
 }
