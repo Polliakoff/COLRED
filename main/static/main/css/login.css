@@ -71,6 +71,9 @@ main {
     background: unset;
     border: 0px;
     cursor: pointer;
+}
+
+.conf_button .filter_fix{
     width: 85px;
     height: 70px;
 }

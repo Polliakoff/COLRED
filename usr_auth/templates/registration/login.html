@@ -24,9 +24,11 @@
             <form class="py_form" method="post">
                 {% csrf_token %}
                 {{form}}
-                <button type="submit" class="conf_button filter_fix">
-                    <div class="button_backing shadow"></div>
-                    <div>Войти</div>
+                <button type="submit" class="conf_button">
+                    <div class="filter_fix conf_button">
+                        <div class="button_backing shadow"></div>
+                        <div>Войти</div>
+                    </div>
                 </button>
             </form>
         </div>
