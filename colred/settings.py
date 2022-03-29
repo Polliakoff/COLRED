@@ -128,3 +128,7 @@ LOGIN_URL = '/login'
 
 LOGIN_REDIRECT_URL = 'main_page'
 LOGOUT_REDIRECT_URL = '/login'
+
+X_FRAME_OPTIONS = '*'
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://colred.polliakoff.repl.co']
