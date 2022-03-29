@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block title %}
-Redactor
+redacted
 {% endblock %}
 
 {% block username %}
@@ -19,5 +19,51 @@ Redactor
 {% block ava_image %}main/images/avatars/{{ avatar }}.png{% endblock %}
 
 {% block content %}
+<div class="list">
+    <div class="book">
+        <div class="left_page">
+            <div class="up">
+                <div class="char_logo">
+                    <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
+                        alt="+">
+                </div>
+                <div class="char_stats">
+                    <div class="listning placeholder lvl">
+                        <div class="class_lvl">
+                            <input type="text" name="" id="" placeholder="3" maxlength="2">
+                        </div>
+                        <div>Уровень</div>
+                    </div>
+                    <div class="listning placeholder xp">
+                        <div class="">
+                            <input type="text" name="" id="" placeholder="3000" maxlength="5">
+                        </div>
+                        <div>Опыт</div>
+                    </div>
+                    <div class="listning placeholder class">
+                        <div class="">
+                            <input type="text" name="" id="" placeholder="Воин" maxlength="13">
+                        </div>
+                        <div>Класс</div>
+                    </div>
+                </div>
+            </div>
+            <div class="down">
+                <div class="char_info">
+                    <div class="placeholder name"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                    <div class="placeholder"></div>
+                </div>
+            </div>
+        </div>
+        <div class="right_page">
+            
+        </div>
+    </div>
+    <div class="add_info">
 
+    </div>
+</div>
 {% endblock %}
