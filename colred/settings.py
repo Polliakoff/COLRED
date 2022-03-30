@@ -132,3 +132,6 @@ LOGOUT_REDIRECT_URL = '/login'
 X_FRAME_OPTIONS = '*'
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://colred.polliakoff.repl.co']
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'

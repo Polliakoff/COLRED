@@ -5,19 +5,22 @@ from django.contrib.auth.models import User
 from .models import Avatar_of_choice
 from .forms import psw_ch
 from django.contrib.auth import update_session_auth_hash
+from .models import Character
 
 @login_required
 def main(request):
-    av = Avatar_of_choice.objects.get(usr = User.objects.get(username = request.user.username))
+    av = request.user.chosen_avatar
+    chrctrs = request.user.character_set.all()
     cont = {
         'username' : request.user.username,
         'avatar' : av,
+        'characters': chrctrs,
     }
     return render(request, 'main/main_page.html', cont)
 
 @login_required
 def lk(response):
-    av = Avatar_of_choice.objects.get(usr = User.objects.get(username = response.user.username))
+    av = response.user.chosen_avatar
     if response.method == "POST":
         if response.POST.get('_blank'):
             av.name = 'blank'
@@ -53,7 +56,7 @@ def lk(response):
 
 @login_required
 def redactor(request):
-    av = Avatar_of_choice.objects.get(usr = User.objects.get(username = request.user.username))
+    av = request.user.chosen_avatar
     cont = {
         'username' : request.user.username,
         'avatar' : av,
