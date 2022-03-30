@@ -236,6 +236,10 @@ main {
 
 .listing>div:nth-child(2){
   margin-top: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 175px;
 }
 
 .listing:hover {
