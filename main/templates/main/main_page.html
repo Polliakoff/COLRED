@@ -13,7 +13,19 @@ COLRED
 {% block content %}
 <div class="profiles">
 
+    {% for chr in characters %}
     <a href="/redactor">
+        <div class="listing">
+            <div class="char_logo">
+                <img src='/media/{{chr.portrait}}'
+                    alt="+">
+            </div>
+            <div>{{chr.name}}</div>
+        </div>
+    </a>
+    {% endfor %}
+
+    <!-- <a href="/redactor">
         <div class="listing">
             <div class="char_logo">
                 <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
@@ -47,7 +59,7 @@ COLRED
             </div>
             <div>Одниплюсов Положин</div>
         </div>
-    </a>
+    </a> -->
 
     <a href="#">
         <div class="listing addnew">
