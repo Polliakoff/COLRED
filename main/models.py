@@ -1,11 +1,6 @@
-from asyncio.windows_events import NULL
 from pickle import TRUE
-from statistics import mode
-from unicodedata import name
 from django.db import models
 from django.contrib.auth.models import User
-from string import Template
-from django.utils.safestring import mark_safe
 
 class Avatar_of_choice(models.Model):
     name = models.CharField('Название', max_length=50)

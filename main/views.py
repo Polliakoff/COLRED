@@ -1,13 +1,9 @@
-from multiprocessing import context
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import User
-from .models import Avatar_of_choice
 from .forms import Image_Upload_Form, psw_ch
 from .forms import Great_List_Form, Image_Upload_Form
 from django.contrib.auth import update_session_auth_hash
 from .models import Character
-from django.forms.models import model_to_dict
 
 @login_required
 def main(request):

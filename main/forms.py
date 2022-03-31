@@ -1,9 +1,7 @@
-from dataclasses import fields
 from django.contrib.auth.forms import PasswordChangeForm
-from django import forms
-from django.forms import ClearableFileInput, ModelForm
+from django.forms import ModelForm
 from .models import Character
-from django.forms import NumberInput, TextInput, Textarea
+from django.forms import NumberInput, TextInput
 
 class psw_ch(PasswordChangeForm):
 

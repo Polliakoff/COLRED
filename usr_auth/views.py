@@ -1,7 +1,4 @@
-from tkinter import LAST
 from django.shortcuts import render,redirect
-from django.contrib.auth import login,authenticate
-from django.contrib.auth.forms import UserCreationForm
 from .forms import Clr_Rgister_Form
 from main.models import Avatar_of_choice
 from django.contrib.auth.models import User
