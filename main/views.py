@@ -123,4 +123,4 @@ def create_new(request):
 
         'current_character': new_character,
     }
-    return redirect('/redactor/'+request.user.id+'/'+str(new_character.id))
+    return redirect('/redactor/'+str(request.user.id)+'/'+str(new_character.id))
