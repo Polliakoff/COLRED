@@ -3,7 +3,7 @@ $( window ).resize(function() {
 });
 
 $( "#main_search" ).change(function() {
-    value = $("#main_search").val();
+    value = $("#main_search").val().toLowerCase();
     if(value==""){
         $(".floating_search").css("display","none")
     } else {
@@ -11,7 +11,7 @@ $( "#main_search" ).change(function() {
         $(".floating_search").css("display","unset")
 
         $( ".search_field>a" ).each(function() {
-            t = $( this ).attr("filter")
+            t = $( this ).attr("filter").toLowerCase()
             // if($( this ).attr("filter")=="")
             if(t.indexOf(value)!=-1) {
                 $( this ).css("display","unset");
