@@ -14,7 +14,7 @@ COLRED
 <div class="profiles">
 
     {% for chr in characters %}
-    <a href="/redactor/{{chr.id}}">
+    <a href="/redactor/{{chr.usr.id}}/{{chr.id}}">
         <div class="listing">
             <div class="char_logo">
                 <img src='/media/{{chr.portrait}}'

@@ -57,9 +57,12 @@ def lk(response):
     return render(response, 'main/lk.html', cont)    
 
 @login_required
-def redactor(request,id_):
+def redactor(request,usr_id,chr_id):
     av = request.user.chosen_avatar
-    current_character = Character.objects.get(id = id_) 
+    current_character = Character.objects.get(id = chr_id)
+
+    if not(usr_id == current_character.usr.id and usr_id == request.user.id):
+        return redirect('/') 
 
     if request.method == 'POST':
         sent_gerat_form = Great_List_Form(request.POST)
@@ -120,4 +123,4 @@ def create_new(request):
 
         'current_character': new_character,
     }
-    return redirect('/redactor/'+str(new_character.id))
+    return redirect('/redactor/'+request.user.id+'/'+str(new_character.id))
