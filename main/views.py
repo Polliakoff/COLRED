@@ -91,13 +91,13 @@ def redactor(request,usr_id,chr_id):
 
 
             current_character.save()
-            return redirect('/redactor/'+str(current_character.id))
+            return redirect('/redactor/'+str(request.user.id)+'/'+str(current_character.id))
 
         if sent_image_form.is_valid():
             print('WE ARE HERE')
             current_character.portrait = request.FILES['portrait']
             current_character.save()
-            return redirect('/redactor/'+str(current_character.id))
+            return redirect('/redactor/'+str(request.user.id)+'/'+str(current_character.id))
 
         print(str(sent_image_form.errors))
         print(sent_image_form.non_field_errors)
