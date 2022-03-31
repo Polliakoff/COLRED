@@ -238,3 +238,117 @@ div.txt_fields > *{
 .up_input_fix .lower {
     margin-right: 0.59vw !important;
 }
+
+
+.tree{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 255, 0.425);
+    height: 10vw;
+    align-items: center;
+}
+
+.tree>div{
+    height: 7.5vw;
+    width: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mm input {
+    width: 5vw;
+    height: 50%;
+    font-size: 2.8vw;
+}
+
+.mm {
+    width: 6.2vw;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    background: url(../images/list/right/list_book_field.svg) no-repeat;
+    background-size: cover;
+    width: 7vw;
+    text-align: center;
+    height: 2vw;
+}
+
+.save .mm {
+    background: url(../images/list/right/list_book_armor.svg) no-repeat;
+    background-size: cover;
+    width: 5vw;
+}
+
+.hp .mm {
+    background: url(../images/list/right/list_book_hp.svg) no-repeat;
+    background-size: cover;
+}
+
+.speed .mm {
+    background: url(../images/list/right/list_book_speed.svg) no-repeat;
+    background-size: cover;
+}
+
+.speed input{
+    margin-right: 0.5vw;
+}
+
+
+/*  */
+/*  */
+
+.twin>div{
+    height: 7.5vw;
+    width: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.death{
+    margin-left: 4vw;
+}
+
+.whatr{
+    margin-right: 4vw;
+}
+
+.twin .mm input{
+    font-size: 2.4vw;
+}
+
+.twin{
+    height: 11vw;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(137, 43, 226, 0.582);
+}
+
+.death .mm {
+    background: url(../images/list/right/list_book_death.svg) no-repeat;
+    background-size: cover;
+    width: 5.3vw;
+}
+
+.death input{
+    margin-bottom: 1vw;
+}
+
+.whatr .mm {
+    background: url(../images/list/right/list_book_wound.svg) no-repeat;
+    background-size: cover;
+    width: 3vw;
+}
+.whatr input {
+    margin-top: 1vw;
+}
