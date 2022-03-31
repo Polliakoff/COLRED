@@ -6,6 +6,17 @@
     margin-top: 60px;
 }
 
+.little_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.little_button{
+    background: unset;
+}
+
 .btn_dv{
     z-index: 10;
     display: flex;
