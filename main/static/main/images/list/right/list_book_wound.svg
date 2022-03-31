@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="37.562057mm"
-   height="71.988258mm"
-   viewBox="0 0 37.562057 71.988258"
+   width="44.80941mm"
+   height="71.967171mm"
+   viewBox="0 0 44.80941 71.96717"
    version="1.1"
    id="svg4352"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.64052329"
-     inkscape:cx="-526.91293"
-     inkscape:cy="42.153034"
+     inkscape:zoom="2.5620932"
+     inkscape:cx="130.94762"
+     inkscape:cy="161.97694"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -38,11 +38,11 @@
      inkscape:label="Слой 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-244.34693,-137.08376)">
+     transform="translate(-240.59629,-137.08376)">
     <path
        id="path24191"
        style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 266.12907,137.08376 c -2.10955,24.62027 -46.89671,73.15959 -1.5875,71.96667 38.39958,0.76649 1.0643,-47.97491 1.5875,-71.96667 z m -0.66146,12.43542 c -0.29886,18.3362 31.71269,55.84756 -1.91823,55.82708 -35.38701,0.32935 0.87319,-37.54879 1.91823,-55.82708 z"
+       d="m 266.12907,137.08376 c -6.17144,21.70361 -53.24494,72.1509 -1.5875,71.96667 45.09543,-0.16317 3.30752,-49.78542 1.5875,-71.96667 z m -0.66146,12.43542 c 2.35535,17.12334 37.26284,55.42883 -1.91823,55.82708 -42.52777,-0.42933 -4.02551,-39.91252 1.91823,-55.82708 z"
        sodipodi:nodetypes="cccccc" />
   </g>
 </svg>
