@@ -27,6 +27,7 @@ class Character(models.Model):
     attrib_charisma = models.IntegerField(null=TRUE)
     attrib_endurance = models.IntegerField(null=TRUE)
     attrib_intelligence = models.IntegerField(null=TRUE)
+    attrib_wisdom = models.IntegerField(null=TRUE)
     armour_class = models.IntegerField(null=TRUE)
     hp = models.IntegerField(null=TRUE)
     speed = models.IntegerField(null=TRUE)
