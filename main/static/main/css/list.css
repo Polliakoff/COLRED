@@ -320,6 +320,10 @@ div.txt_fields > *{
 /*  */
 /*  */
 
+.right_page .down {
+    font-size: 0.75vw;
+}
+
 .twin>div{
     height: 7.5vw;
     width: 6vw;
@@ -368,4 +372,47 @@ div.txt_fields > *{
 }
 .whatr input {
     margin-top: 1vw;
+}
+
+
+/* =========================================================== */
+/* =========================================================== */
+/* =========================================================== */
+/* =========================================================== */
+
+
+.add_info {
+    display: none;
+    flex-direction: row;
+    padding-top: 2vw;
+    width: 70vw;
+    height: 60vw;
+    background-color: rgba(255, 0, 0, 0.623);
+    justify-content: space-evenly;
+}
+
+.add_info>div{
+    width: 21vw;
+}
+
+.feats {
+    background: url(../images/list/add_info/list_skills.svg) no-repeat;
+    background-size: cover;
+    height: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block_name {
+    background-color: rgba(153, 205, 50, 0.822);
+    width: 17vw;
+    height: 4vw;
+}
+
+.feat {
+    background-color: rgba(153, 205, 50, 0.822);
+    width: 17vw;
+    height: 3vw;
 }
