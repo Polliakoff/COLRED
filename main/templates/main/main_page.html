@@ -14,7 +14,7 @@ COLRED
 <div class="profiles">
 
     {% for chr in characters %}
-    <a href="/redactor">
+    <a href="/redactor/{{chr.id}}">
         <div class="listing">
             <div class="char_logo">
                 <img src='/media/{{chr.portrait}}'
@@ -25,43 +25,7 @@ COLRED
     </a>
     {% endfor %}
 
-    <!-- <a href="/redactor">
-        <div class="listing">
-            <div class="char_logo">
-                <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
-                    alt="+">
-            </div>
-            <div>Персоврак Кожеботович</div>
-        </div>
-    </a>
-    <a href="#">
-        <div class="listing">
-            <div class="char_logo">
-                <img src="https://chudo-prirody.com/uploads/posts/2021-08/1628511358_117-p-spinorog-riba-zhivaya-foto-136.jpg"
-                    alt="+">
-            </div>
-            <div>Лорем Ипсум</div>
-        </div>
-    </a>
-    <a href="#">
-        <div class="listing">
-            <div class="char_logo">
-                <img src="https://cdn.discordapp.com/attachments/831955488743751700/949349995692318841/Du_Boir.png" alt="+">
-            </div>
-            <div>Иван?</div>
-        </div>
-    </a>
-    <a href="#">
-        <div class="listing">
-            <div class="char_logo">
-                <img src="https://img2.freepng.ru/20180425/fww/kisspng-plus-and-minus-signs-5ae10740998772.7506031915246968966289.jpg"
-                    alt="+">
-            </div>
-            <div>Одниплюсов Положин</div>
-        </div>
-    </a> -->
-
-    <a href="#">
+    <a href="/create_new">
         <div class="listing addnew">
             <div>Добавить новый</div>
         </div>

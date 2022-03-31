@@ -21,6 +21,21 @@ redacted
 {% block ava_image %}main/images/avatars/{{ avatar }}.png{% endblock %}
 
 {% block content %}
+<div id="popup" class="popup">
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#the_header" class="popup_close">=X=</a>
+            <h3 class="popup_title">Выберите портрет песонажа</h3>
+            <br>
+            <form method="post" class="little_form" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{portrait_form}}
+                <br>
+                <button type="submit" class="little_button">=V=</button>
+            </form>
+        </div>
+    </div>
+</div>
 <form method="post" class="big_form">
     {% csrf_token %}
     <div class="btn_dv">
@@ -30,17 +45,6 @@ redacted
                 <div>Редакция Архивов</div>
             </div>
         </button>
-    </div>
-    <div id="popup" class="popup">
-        <!-- <a href="#the_header" class="popup_black_area"></a> -->
-        <div class="popup_body">
-            <div class="popup_content">
-                <a href="#the_header" class="popup_close">=X=</a>
-                <h3 class="popup_title">Выберите портрет песонажа</h3>
-                <br>
-                <!-- portrait form here -->
-            </div>
-        </div>
     </div>
     <div class="list">
         <div class="book shadow">
@@ -184,7 +188,8 @@ redacted
                     <div class="tree">
                         <div class="save">
                             <div class="mm">
-                                <input type="text">
+                                <!-- <input type="text"> -->
+                                {{form.armour_class}}
                             </div>
                             <div class="title">
                                 Класс Брони
@@ -192,7 +197,8 @@ redacted
                         </div>
                         <div class="hp">
                             <div class="mm">
-                                <input type="text">
+                                <!-- <input type="text"> -->
+                                {{form.hp}}
                             </div>
                             <div class="title">
                                 Здоровье
@@ -200,7 +206,8 @@ redacted
                         </div>
                         <div class="speed">
                             <div class="mm">
-                                <input type="text">
+                                <!-- <input type="text"> -->
+                                {{form.speed}}
                             </div>
                             <div class="title">
                                 Скорость
@@ -210,7 +217,8 @@ redacted
                     <div class="twin">
                         <div class="death">
                             <div class="mm">
-                                <input type="text">
+                                <!-- <input type="text"> -->
+                                {{form.is_dying}}
                             </div>
                             <div class="title">
                                 При смерти
@@ -218,7 +226,8 @@ redacted
                         </div>
                         <div class="whatr">
                             <div class="mm">
-                                <input type="text">
+                                <!-- <input type="text"> -->
+                                {{form.mortal_wounds}}
                             </div>
                             <div class="title">
                                 Тяж.раны

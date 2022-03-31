@@ -1,7 +1,7 @@
 from dataclasses import fields
 from django.contrib.auth.forms import PasswordChangeForm
 from django import forms
-from django.forms import ImageField, ModelForm
+from django.forms import ClearableFileInput, ModelForm
 from .models import Character
 from django.forms import NumberInput, TextInput, Textarea
 
@@ -29,9 +29,28 @@ class Great_List_Form(ModelForm):
             'worldview',
             'xp',
             'chr_class',
-            #'portrait',
+            'armour_class',
+            'hp',
+            'speed',
+            'is_dying',
+            'mortal_wounds',
         ]
         widgets = {
+            'armour_class': NumberInput(attrs={
+                'placeholder' : '_',
+            }),
+            'hp': NumberInput(attrs={
+                'placeholder' : '_',
+            }),
+            'speed': NumberInput(attrs={
+                'placeholder' : '_',
+            }),
+            'is_dying': NumberInput(attrs={
+                'placeholder' : '_',
+            }),
+            'mortal_wounds': NumberInput(attrs={
+                'placeholder' : '_',
+            }),
             'name': TextInput(attrs={
                 'style' : 'width: 20vw;',
                 'placeholder' : '________',
@@ -84,3 +103,10 @@ class Great_List_Form(ModelForm):
                 'placeholder' : '__',
             }),
         }
+
+class Image_Upload_Form(ModelForm):
+    class Meta:
+        model = Character
+        fields = [
+            'portrait',
+        ]

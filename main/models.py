@@ -4,7 +4,8 @@ from statistics import mode
 from unicodedata import name
 from django.db import models
 from django.contrib.auth.models import User
-
+from string import Template
+from django.utils.safestring import mark_safe
 
 class Avatar_of_choice(models.Model):
     name = models.CharField('Название', max_length=50)
@@ -15,7 +16,7 @@ class Avatar_of_choice(models.Model):
 
 class Character(models.Model):
     name = models.CharField(max_length=100)
-    portrait = models.ImageField(upload_to ='user_images/')
+    portrait = models.ImageField(upload_to ='user_images/',blank = True)
     usr = models.ForeignKey(User, on_delete=models.CASCADE)
     chr_class = models.CharField(max_length=13,null=TRUE,blank=TRUE)
     xp = models.IntegerField(null=TRUE,blank=TRUE)
@@ -58,6 +59,8 @@ class Character(models.Model):
     attention = models.IntegerField(null=TRUE,blank=TRUE)
     dc_class = models.IntegerField(null=TRUE,blank=TRUE)
     notes = models.TextField(null=TRUE,blank=TRUE)
+    is_dying = models.IntegerField(null=TRUE,blank=TRUE)
+    mortal_wounds = models.IntegerField(null=TRUE,blank=TRUE)
 
     def __str__(self):
         return self.name
