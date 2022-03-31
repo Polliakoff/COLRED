@@ -17,6 +17,7 @@ class Character(models.Model):
     name = models.CharField(max_length=100)
     portrait = models.ImageField(upload_to ='user_images/')
     usr = models.ForeignKey(User, on_delete=models.CASCADE)
+    chr_class = models.CharField(max_length=13,null=TRUE)
     xp = models.IntegerField(null=TRUE)
     background = models.CharField(max_length=100,null=TRUE)
     diety = models.CharField(max_length=100,null=TRUE)

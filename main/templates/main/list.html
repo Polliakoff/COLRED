@@ -32,19 +32,22 @@ redacted
                     <div class="char_stats">
                         <div class="listning placeholder lvl">
                             <div class="class_lvl">
-                                <input type="text" name="" id="" placeholder="3" maxlength="2">
+                                <!-- <input type="text" name="" id="" placeholder="3" maxlength="2"> -->
+                                <div>3</div>
                             </div>
                             <div>Уровень</div>
                         </div>
                         <div class="listning placeholder xp">
                             <div class="">
-                                <input type="text" name="" id="" placeholder="3000" maxlength="5">
+                                <!-- <input type="text" name="" id="" placeholder="3000" maxlength="5"> -->
+                                {{ form.xp }}
                             </div>
                             <div>Опыт</div>
                         </div>
                         <div class="listning placeholder class">
                             <div class="">
-                                <input type="text" name="" id="" placeholder="Воин" maxlength="13">
+                                <!-- <input type="text" name="" id="" placeholder="Воин" maxlength="13"> -->
+                                {{ form.chr_class }}
                             </div>
                             <div>Класс</div>
                         </div>
@@ -56,19 +59,36 @@ redacted
                             Имя персонажа
                         </div>
                         <div class="placeholder">
-                            <input type="text" name="" id="" placeholder="Персоврак Кожеботович">
+                            <!-- <input type="text" name="" id="" placeholder="________"> -->
+                            {{ form.name }}
                         </div>
                         <div class="placeholder">
-                            <input type="text" name="" id="" placeholder="Прошлое: дед     Божество:  Зевс"
-                                style="margin-top: 5px;">
+                            <div class="txt_fields">
+                                <p style="margin-top: 5px;">Прошлое: </p>
+                                <!-- <input type="text" name="" id="" placeholder="________"
+                                    style="margin-top: 5px;"> -->
+                                {{ form.background }}
+                                <p style="margin-top: 5px;">Божество: </p>
+                                <!-- <input type="text" name="" id="" placeholder="________"
+                                    style="margin-top: 5px;"> -->
+                                {{ form.diety }}
+                            </div>
                         </div>
                         <div class="placeholder">
-                            <input type="text" name="" id="" placeholder="Происхождение: сын Кожеботовича"
-                                style="margin-top: 10px;">
+                            <div class="txt_fields">
+                                <p style="margin-top: 5px;">Происхождение: </p>
+                                <!-- <input type="text" name="" id="" placeholder="________"
+                                    style="margin-top: 5px;"> -->
+                                {{ form.origin }}
+                            </div>
                         </div>
                         <div class="placeholder">
-                            <input type="text" name="" id="" placeholder="Мировозрение: СЕ    Трейты:    -   "
-                                style="margin-top: 10px;">
+                            <div class="txt_fields">
+                                <p style="margin-top: 5px;">Мировозрение: </p>
+                                <!-- <input type="text" name="" id="" placeholder="________"
+                                    style="margin-top: 5px;"> -->
+                                {{ form.worldview }}
+                            </div>
                         </div>
                     </div>
                 </div>

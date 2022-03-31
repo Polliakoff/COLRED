@@ -22,21 +22,63 @@ class Great_List_Form(ModelForm):
             'attrib_endurance',
             'attrib_intelligence',
             'attrib_wisdom',
+            'name',
+            'background',
+            'diety',
+            'origin',
+            'worldview',
+            'xp',
+            'chr_class',
         ]
         widgets = {
+            'name': TextInput(attrs={
+                'placeholder' : '________',
+            }),
+            'background': TextInput(attrs={
+                'placeholder' : '________',
+                'style' : 'margin-top: 5px;',
+            }),
+            'diety': TextInput(attrs={
+                'placeholder' : '________',
+                'style' : 'margin-top: 5px;',
+            }),
+            'origin': TextInput(attrs={
+                'placeholder' : '________',
+                'style' : 'margin-top: 5px;',
+            }),
+            'worldview': TextInput(attrs={
+                'placeholder' : '________',
+                'style' : 'margin-top: 5px;',
+            }),
+            'xp': NumberInput(attrs={
+                'style' : 'width: 4vw;',
+                'placeholder' : '___',
+            }),
+            'chr_class': TextInput(attrs={
+                'placeholder' : '________',
+            }),
             'attrib_strength': NumberInput(attrs={
                 'id' : 'STR',
+                'placeholder' : '__',
             }),
             'attrib_agility': NumberInput(attrs={
                 'id' : 'DX',
+                'placeholder' : '__',
             }),
             'attrib_charisma': NumberInput(attrs={
                 'id' : 'CHR',
+                'placeholder' : '__',
             }),
             'attrib_endurance': NumberInput(attrs={
                 'id' : 'CON',
+                'placeholder' : '__',
             }),
             'attrib_intelligence': NumberInput(attrs={
                 'id' : 'IN',
+                'placeholder' : '__',
+            }),
+            'attrib_wisdom': NumberInput(attrs={
+                'id' : 'WIS',
+                'placeholder' : '__',
             }),
         }
