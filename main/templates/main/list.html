@@ -38,14 +38,7 @@ redacted
 </div>
 <form method="post" class="big_form">
     {% csrf_token %}
-    <div class="btn_dv">
-        <button type="submit" class="conf_button_b">
-            <div class="filter_fix conf_button">
-                <div class="button_backing shadow"></div>
-                <div>Редакция Архивов</div>
-            </div>
-        </button>
-    </div>
+    
     <div class="list">
         <div class="book shadow">
             <div class="left_page">
@@ -280,6 +273,14 @@ redacted
                 </div>
             </div>
         </div>
+    </div>
+    <div class="btn_dv">
+        <button type="submit" class="conf_button_b">
+            <div class="filter_fix conf_button">
+                <div class="button_backing shadow"></div>
+                <div>Редакция Архивов</div>
+            </div>
+        </button>
     </div>
 </form>
 <script type="text/javascript" src="{% static 'main/js/list.js' %}"></script>
