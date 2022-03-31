@@ -11,7 +11,7 @@
 <div class="floating_search shadow">
     <div class="search_field">
         {% for chr in characters %}
-        <a filter="{{chr.name}}" href="/redactor">
+        <a filter="{{chr.name}}" href="/redactor/{{chr.usr.id}}/{{chr.id}}">
             <div class="search_listing">
                 <div class="char_logo">
                     <img src='/media/{{chr.portrait}}'
