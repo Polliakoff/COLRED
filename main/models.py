@@ -59,6 +59,8 @@ class Character(models.Model):
     attention = models.IntegerField(null=TRUE,blank=TRUE)
     dc_class = models.IntegerField(null=TRUE,blank=TRUE)
     notes = models.TextField(null=TRUE,blank=TRUE)
+    is_dying = models.IntegerField(null=TRUE,blank=TRUE)
+    mortal_wounds = models.IntegerField(null=TRUE,blank=TRUE)
 
     def __str__(self):
         return self.name

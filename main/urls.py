@@ -4,5 +4,6 @@ from . import views
 urlpatterns = [
     path('', views.main, name='main_page'),
     path('lk',views.lk, name ='lk'),
-    path('redactor',views.redactor, name ='redactor'),
+    path('redactor/<int:id_>',views.redactor, name ='redactor'),
+    path('create_new',views.create_new, name ='create_new'),
 ]

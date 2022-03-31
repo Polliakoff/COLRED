@@ -271,7 +271,7 @@ div.txt_fields > *{
 .tree{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(0, 0, 255, 0.425);
+    /* background-color: rgba(0, 0, 255, 0.425); */
     height: 10vw;
     align-items: center;
 }
@@ -359,7 +359,7 @@ div.txt_fields > *{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(137, 43, 226, 0.582);
+    /* background-color: rgba(137, 43, 226, 0.582); */
 }
 
 .death .mm {

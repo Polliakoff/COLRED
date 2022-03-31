@@ -29,8 +29,28 @@ class Great_List_Form(ModelForm):
             'worldview',
             'xp',
             'chr_class',
+            'armour_class',
+            'hp',
+            'speed',
+            'is_dying',
+            'mortal_wounds',
         ]
         widgets = {
+            'armour_class': NumberInput(attrs={
+                'placeholder' : '_',
+            }),
+            'hp': NumberInput(attrs={
+                'placeholder' : '_',
+            }),
+            'speed': NumberInput(attrs={
+                'placeholder' : '_',
+            }),
+            'is_dying': NumberInput(attrs={
+                'placeholder' : '_',
+            }),
+            'mortal_wounds': NumberInput(attrs={
+                'placeholder' : '_',
+            }),
             'name': TextInput(attrs={
                 'style' : 'width: 20vw;',
                 'placeholder' : '________',

@@ -57,9 +57,9 @@ def lk(response):
     return render(response, 'main/lk.html', cont)    
 
 @login_required
-def redactor(request):
+def redactor(request,id_):
     av = request.user.chosen_avatar
-    current_character = Character.objects.get(name = 'Персоврак Кожеботович') 
+    current_character = Character.objects.get(id = id_) 
 
     if request.method == 'POST':
         sent_gerat_form = Great_List_Form(request.POST)
@@ -79,15 +79,21 @@ def redactor(request):
             current_character.worldview = request.POST.get('worldview')
             current_character.xp = request.POST.get('xp')
             current_character.chr_class = request.POST.get('chr_class')
+            current_character.hp = request.POST.get('hp')
+            current_character.armour_class = request.POST.get('armour_class')
+            current_character.speed = request.POST.get('speed')
+            current_character.is_dying = request.POST.get('is_dying')
+            current_character.mortal_wounds = request.POST.get('mortal_wounds')
+
 
             current_character.save()
-            return redirect('/redactor')
+            return redirect('/redactor/'+str(current_character.id))
 
         if sent_image_form.is_valid():
             print('WE ARE HERE')
             current_character.portrait = request.FILES['portrait']
             current_character.save()
-            return redirect('/redactor')
+            return redirect('/redactor/'+str(current_character.id))
 
         print(str(sent_image_form.errors))
         print(sent_image_form.non_field_errors)
@@ -106,3 +112,12 @@ def redactor(request):
     }
     return render(request, 'main/list.html', cont)
 
+@login_required
+def create_new(request):
+    new_character = Character(usr = request.user, name = 'Новый Персонаж')
+    new_character.save()
+    cont = {
+
+        'current_character': new_character,
+    }
+    return redirect('/redactor/'+str(new_character.id))
