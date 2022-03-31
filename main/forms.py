@@ -29,7 +29,7 @@ class Great_List_Form(ModelForm):
             'worldview',
             'xp',
             'chr_class',
-            'portrait',
+            #'portrait',
         ]
         widgets = {
             'name': TextInput(attrs={
