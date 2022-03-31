@@ -10,108 +10,9 @@
 {% load static %}
 <div class="floating_search shadow">
     <div class="search_field">
-        <a filter="Персоврак Кожеботович" href="/redactor">
-            <div  class="search_listing">
-                <div class="char_logo">
-                    <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
-                        alt="+">
-                </div>
-                <div>Персоврак Кожеботович</div>
-            </div>
-        </a>
-        <a filter="2t" href="/redactor">
+        {% for chr in characters %}
+        <a filter="{{chr.name}}" href="/redactor">
             <div class="search_listing">
-                <div class="char_logo">
-                    <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
-                        alt="+">
-                </div>
-                <div>Персоврак Кожеботович</div>
-            </div>
-        </a>
-        <a filter="3t" href="/redactor">
-            <div class="search_listing">
-                <div class="char_logo">
-                    <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
-                        alt="+">
-                </div>
-                <div>Персоврак Кожеботович</div>
-            </div>
-        </a>
-        <a filter="3" href="/redactor">
-            <div class="search_listing">
-                <div class="char_logo">
-                    <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
-                        alt="+">
-                </div>
-                <div>Персоврак Кожеботович</div>
-            </div>
-        </a>
-        <a filter="3b" href="/redactor">
-            <div class="search_listing">
-                <div class="char_logo">
-                    <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
-                        alt="+">
-                </div>
-                <div>Персоврак Кожеботович</div>
-            </div>
-        </a>
-        <a filter="3b" href="/redactor">
-            <div class="search_listing">
-                <div class="char_logo">
-                    <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
-                        alt="+">
-                </div>
-                <div>Персоврак Кожеботович</div>
-            </div>
-        </a>
-        <a filter="3b" href="/redactor">
-            <div class="search_listing">
-                <div class="char_logo">
-                    <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
-                        alt="+">
-                </div>
-                <div>Персоврак Кожеботович</div>
-            </div>
-        </a>
-        <a filter="3b" href="/redactor">
-            <div class="search_listing">
-                <div class="char_logo">
-                    <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
-                        alt="+">
-                </div>
-                <div>Персоврак Кожеботович</div>
-            </div>
-        </a>
-        <a filter="3b" href="/redactor">
-            <div class="search_listing">
-                <div class="char_logo">
-                    <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
-                        alt="+">
-                </div>
-                <div>Персоврак Кожеботович</div>
-            </div>
-        </a>
-        <a filter="3b" href="/redactor">
-            <div class="search_listing">
-                <div class="char_logo">
-                    <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
-                        alt="+">
-                </div>
-                <div>Персоврак Кожеботович</div>
-            </div>
-        </a>
-        <a filter="3b" href="/redactor">
-            <div class="search_listing">
-                <div class="char_logo">
-                    <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
-                        alt="+">
-                </div>
-                <div>Персоврак Кожеботович</div>
-            </div>
-        </a>
-        <!-- {% for chr in characters %}
-        <a href="/redactor">
-            <div class="listing">
                 <div class="char_logo">
                     <img src='/media/{{chr.portrait}}'
                         alt="+">
@@ -119,8 +20,8 @@
                 <div>{{chr.name}}</div>
             </div>
         </a>
-        {% endfor %} -->
-        <a filter="" href="/redactor" class="new_one">
+        {% endfor %}
+        <a filter="" href="/create_new" class="new_one">
             <div class="search_listing">
                 <div class="char_logo">
                     <img src="https://img2.freepng.ru/20180425/fww/kisspng-plus-and-minus-signs-5ae10740998772.7506031915246968966289.jpg"

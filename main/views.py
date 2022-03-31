@@ -59,6 +59,7 @@ def lk(response):
 @login_required
 def redactor(request,usr_id,chr_id):
     av = request.user.chosen_avatar
+    chrctrs = request.user.character_set.all()
     current_character = Character.objects.get(id = chr_id)
 
     if not(usr_id == current_character.usr.id and usr_id == request.user.id):
@@ -112,6 +113,7 @@ def redactor(request,usr_id,chr_id):
         'form' : form,
         'portrait_form' : portrait_form,
         'current_character': current_character,
+        'characters': chrctrs,
     }
     return render(request, 'main/list.html', cont)
 
