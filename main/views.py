@@ -1,5 +1,5 @@
 from multiprocessing import context
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from .models import Avatar_of_choice
@@ -58,8 +58,21 @@ def lk(response):
 @login_required
 def redactor(request):
     av = request.user.chosen_avatar
-    current_character = Character.objects.get(name = 'ПЕРКОСРАК КОЖЕБОТОВИЧ')
+    current_character = Character.objects.get(name = 'GHGHGHGHG')
+    
+    if request.method == 'POST':
+        sent_form = Great_List_Form(request.POST)
+        print('IS POST+++++++++++++++++++++++++++++++')
+        if sent_form.is_valid():
+            print('IS VALID+++++++++++++++++++++++++++++++')
+            current_character = sent_form.save()
+            #current_character.save()
+            return redirect('/redactor')
+        print(str(sent_form.errors))
+        print(sent_form.non_field_errors)
+
     form = Great_List_Form(instance=current_character)
+    
     cont = {
         'username' : request.user.username,
         'avatar' : av,
