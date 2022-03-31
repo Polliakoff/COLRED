@@ -2,6 +2,7 @@
 {% block list %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'main/css/list.css' %}">
+<link rel="stylesheet" href="{% static 'main/css/lk.css' %}">
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous">
     </script>
@@ -21,14 +22,26 @@ redacted
 {% block content %}
 <form method="post">
     {% csrf_token %}
+    <div id="popup" class="popup">
+        <!-- <a href="#the_header" class="popup_black_area"></a> -->
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#the_header" class="popup_close">=X=</a>
+                <h3 class="popup_title">Выберите портрет песонажа</h3>
+                <br>
+                {{ form.portrait }}
+            </div>
+        </div>
+    </div>
     <div class="list">
         <div class="book">
             <div class="left_page">
                 <div class="up">
-                    <div class="char_logo">
-                        <img src="https://res.cloudinary.com/fleetnation/image/private/c_fill,g_center,h_640,w_640/v1434447997/x0tb74d8kzfl1glpwnvp.jpg"
-                            alt="+">
-                    </div>
+                    <a href="#popup">
+                        <div class="char_logo">
+                            <img src="/media/{{current_character.portrait}}" alt="+">
+                        </div>
+                    </a>
                     <div class="char_stats">
                         <div class="listning placeholder lvl">
                             <div class="class_lvl">
@@ -159,12 +172,12 @@ redacted
                     </div>
                 </div>
                 <div class="down">
-    
+
                 </div>
             </div>
         </div>
         <div class="add_info">
-    
+
         </div>
     </div>
 </form>

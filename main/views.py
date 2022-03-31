@@ -58,11 +58,13 @@ def lk(response):
 @login_required
 def redactor(request):
     av = request.user.chosen_avatar
-    form = Great_List_Form()
+    current_character = Character.objects.get(name = 'ПЕРКОСРАК КОЖЕБОТОВИЧ')
+    form = Great_List_Form(instance=current_character)
     cont = {
         'username' : request.user.username,
         'avatar' : av,
         'form' : form,
+        'current_character': current_character,
     }
     return render(request, 'main/list.html', cont)
 
