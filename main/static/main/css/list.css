@@ -299,6 +299,10 @@ div.txt_fields > *{
     align-items: center;
 }
 
+#mw{
+    padding: 0 7px;
+}
+
 .title{
     background: url(../images/list/right/list_book_field.svg) no-repeat;
     background-size: cover;

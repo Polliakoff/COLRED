@@ -48,6 +48,7 @@ class Great_List_Form(ModelForm):
             }),
             'mortal_wounds': NumberInput(attrs={
                 'placeholder' : '_',
+                'style' : 'margin-left: 1rem;',
             }),
             'name': TextInput(attrs={
                 'style' : 'width: 20vw;',
