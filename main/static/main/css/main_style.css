@@ -61,13 +61,18 @@ body {
   .filter_fix>div:nth-child(1) {
     background: url(../images/login_page_mobile.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
+    background-position: center;
   }
 
   .filter_fix {
-    width: 372px;  /* only for login */
-    height: 270px;  /* only for login */
+    width: 88vw;  
+    height: 270px;  
     display: flex;
+  }
+
+  .about{
+    display: none;
   }
 }
 
