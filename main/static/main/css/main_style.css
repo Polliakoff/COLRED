@@ -57,6 +57,20 @@ body {
   background-size: cover;
 }  
 
+@media screen and (max-width: 620px) {
+  .filter_fix>div:nth-child(1) {
+    background: url(../images/login_page_mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .filter_fix {
+    width: 372px;  /* only for login */
+    height: 270px;  /* only for login */
+    display: flex;
+  }
+}
+
 .shadow{
   filter: drop-shadow( 3px 3px 2px rgba(34, 60, 80, 0.5));
 }
