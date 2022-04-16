@@ -210,6 +210,19 @@ header .search input{
   font-size: 16px;
 }
 
+@media screen and (max-width: 786px) {
+  .lknick>*{
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+  header .lknick{
+    height: 0px;
+    width: 0px;
+    display: none;
+  }
+}
+
 .strange {
   background: url(../images/separator.svg);
   background-color: rgba(0, 0, 0, 0);
