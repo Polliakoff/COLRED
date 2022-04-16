@@ -223,6 +223,28 @@ header .search input{
   }
 }
 
+@media screen and (max-width: 536px) {
+  header .search{
+    background: url(../images/search_window_mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 0px right 0px;
+    width: 202.4px;
+    height: 60px;
+  }
+
+  header .logo img {
+    height: 54px;
+    width: auto;
+  }
+
+  header .logo * {
+    padding: 0px;
+  }
+}
+
+
+
 .strange {
   background: url(../images/separator.svg);
   background-color: rgba(0, 0, 0, 0);
