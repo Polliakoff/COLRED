@@ -660,7 +660,7 @@ div.txt_fields > *{
     }
     
     .stats>div:nth-child(2){
-        margin-bottom: calc(2.685714285714286*2.5vw);
+        margin-bottom: calc(2.685714285714286*1vw);
         font-size: calc(2.685714285714286*2.8vw);
     }
     
@@ -922,7 +922,7 @@ div.txt_fields > *{
     #id_mortal_wounds {
         width: 10vw;
         margin-top: 7vw;
-        margin-right: 1vw;
+        margin-right: 5vw;
     }
   }
   
