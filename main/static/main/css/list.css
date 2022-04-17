@@ -660,7 +660,7 @@ div.txt_fields > *{
     }
     
     .stats>div:nth-child(2){
-        margin-bottom: calc(2.685714285714286*1vw);
+        margin-bottom: calc(2.685714285714286*1.5vw);
         font-size: calc(2.685714285714286*2.8vw);
     }
     
