@@ -243,16 +243,7 @@ header .search input{
   }
 }
 
-@media screen and (max-width: 850px) {
-  .book{
-    flex-direction: column !important;
-    background: url(../images/list/list_book_empty_mobile_vertical.svg) no-repeat !important;
-    background-size: auto !important;
-    background-size: cover !important;
-    min-width: 35vw !important;
-    height: 98vw !important;
-  }
-}
+
 
 
 .strange {
@@ -378,7 +369,6 @@ footer>div{
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 
 

@@ -51,7 +51,6 @@ class Great_List_Form(ModelForm):
                 'style' : 'margin-left: 1rem;',
             }),
             'name': TextInput(attrs={
-                'style' : 'width: 20vw;',
                 'placeholder' : '________',
             }),
             'background': TextInput(attrs={
@@ -71,7 +70,6 @@ class Great_List_Form(ModelForm):
                 'style' : 'margin-top: 5px;',
             }),
             'xp': NumberInput(attrs={
-                'style' : 'width: 4vw;',
                 'placeholder' : '___',
             }),
             'chr_class': TextInput(attrs={
