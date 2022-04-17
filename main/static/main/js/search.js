@@ -1,6 +1,6 @@
-$( window ).resize(function() {
-    $(".floating_search").css("display","none")
-});
+// $( window ).resize(function() {
+//     $(".floating_search").css("display","none")
+// });
 
 $( "#main_search" ).change(function() {
     value = $("#main_search").val().toLowerCase();
@@ -22,7 +22,7 @@ $( "#main_search" ).change(function() {
 
         $( ".new_one" ).css("display","unset");
     }
-   
+    document.activeElement.blur();
 });
 
 
