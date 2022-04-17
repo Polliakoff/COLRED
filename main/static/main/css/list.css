@@ -440,6 +440,10 @@ div.txt_fields > *{
     width: 4vw;
 }
 
+#id_mortal_wounds {
+    margin-top: 2vw;
+}
+
 
 /* I AM THE BORDER============================================================ */
 /* I AM THE BORDER============================================================ */
@@ -913,6 +917,12 @@ div.txt_fields > *{
 
     main {
         margin: 20px 0 !important;
+    }
+
+    #id_mortal_wounds {
+        width: 10vw;
+        margin-top: 7vw;
+        margin-right: 1vw;
     }
   }
   
