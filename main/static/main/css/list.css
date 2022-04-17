@@ -456,7 +456,7 @@ div.txt_fields > *{
 
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 790px) {
     .big_form{
         display: flex;
         flex-direction: column;
