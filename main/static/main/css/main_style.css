@@ -74,6 +74,15 @@ body {
   .about{
     display: none;
   }
+
+  .conf_button_b {
+    margin-top: 40px !important;
+    margin-right: 50px;
+  }
+
+  .mobile_fix{
+    margin-top: 3px !important;
+  }
 }
 
 .shadow{
