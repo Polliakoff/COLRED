@@ -50,6 +50,7 @@
 
 .placeholder > div {
     display: flex;
+    max-width: 380px;
 }
 
 .placeholder > div > p{
@@ -64,6 +65,10 @@
 
 .conf_button_b {
     margin-left: 5vw;
+}
+
+.placeholder > div > div {
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 1330px) {
