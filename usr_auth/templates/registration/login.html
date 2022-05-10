@@ -15,18 +15,15 @@
         <img src="{% static 'main/images/logo.png' %}" alt="COLRED">
     </div>
     <div>
-        <h2>Создатель и редактор персонажей для Pathfinder 2E</h2>
+        <h2>Создатель и редактор персонажей для GURPS 4e</h2>
     </div>
     <div class="filter_fix">
-        <div class="shadow">
-        </div>
         <div class="login_form">
             <form class="py_form" method="post">
                 {% csrf_token %}
                 {{form}}
                 <button type="submit" class="conf_button_b">
                     <div class="filter_fix conf_button">
-                        <div class="button_backing shadow"></div>
                         <div>Войти</div>
                     </div>
                 </button>

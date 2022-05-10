@@ -4,6 +4,7 @@
   font-family: "Palatino Linotype", Arial;
   transition: all 0.2s;
   outline: none;
+  border-radius: 0.5vw;
 }
 
 input {
@@ -22,18 +23,92 @@ a:hover {
   color: black;
 }
 
-html,
-body {
-  margin: 0;
-  height: 100%;
-}
 
 body {
-  /* margin-top: 3rem; */
-  display: grid;
-  grid-template-areas: "main" "footer";
-  grid-template-rows: 1fr auto;
+  background: url(../images/Background.png);
+  background-attachment: fixed;
 }
+
+.mainf{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.mainf>*{
+  filter: drop-shadow( 5px 5px 2px #00000096);
+}
+
+.triangle-bottomleft {
+  width: 0;
+  min-height: 50px;
+  border-bottom: 40px solid white;
+  border-left: 90vw solid transparent;
+  border-right: 0px solid transparent;
+  margin: 0 5%;
+}
+
+main {
+  margin: 0 5%;
+  width: 90vw;
+  background-color: white;
+}
+
+.triangle-topright {
+  width: 0;
+  border-top: 40px solid white;
+  border-right: 90vw solid transparent;
+  border-left: 0px solid transparent;
+  margin: 0 5%;
+}
+
+.toggle_theme{
+  /* opacity: 0.5; */
+  /* top: 20vw; */
+  /* left: 5vw; */
+  width: 100px;
+  height: 2vw;
+  /* border-radius: 1vw; */
+  position: relative;
+}
+
+.toggle-button {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  border-radius: 50vw;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.toggle-button::after {
+  content: "";
+  
+  position: absolute;
+  left: 4%;
+  top: 5%;
+  
+  width: 40%;
+  height: 90%;
+  background-color: orange;
+  border-radius: 0.5vw;
+  
+  transform: translateX(0);
+  
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.toggle-button:checked::after {
+  transform: translateX(calc(130%));
+  background-color: white;  
+}
+
+.toggle-button:checked {
+  /* background-color: blue; */
+}
+
 
 
 /* important============================================================ */
@@ -51,19 +126,7 @@ body {
   flex-basis: 100%;
 }
 
-.filter_fix>div:nth-child(1) {
-  background: url(../images/login_page.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}  
-
 @media screen and (max-width: 620px) {
-  .filter_fix>div:nth-child(1) {
-    background: url(../images/login_page_mobile.svg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-  }
 
   .filter_fix {
     width: 88vw;  
@@ -109,7 +172,7 @@ header {
 
 header .coach {
   margin: 0 5%;
-  margin-top: 5px;
+  height: 70px;
   /* background-color: aqua; */
   display: flex;
   flex-direction: row;
@@ -123,8 +186,28 @@ header .coach {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  max-height: 60px;
+  background-color: antiquewhite;
+  border: 2px solid #000000;
+  height: 44px;
 }
+
+header .nobrdr{
+  border: 0px solid #000000;
+}
+
+header  .hamburger{
+  display: none;
+  border: 0;
+}
+
+header  .hamburger img{
+  height: 35px;
+  border-radius: 0;
+  padding: 4px;
+  cursor: pointer;
+}
+
+
 
 @media screen and (max-width: 1250px) {
   header .logo>div {
@@ -142,36 +225,26 @@ header .logo img {
 }
 
 header .lknick {
-  width: 220px;
-  height: 44px;
+  width: inherit;
   justify-content: space-between;
   align-items: center;
   margin-right: 10px;
   display: flex;
-  text-align: center
+  text-align: center;
 }
 
-header .lknick>div:nth-child(2) {
-  margin-top: 5px;
-}
-
-
-header .lknick .nickname {
-  background: url(../images/nickname.svg) !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  height: inherit;
+header .lknick>div{
+  margin-left: 15px;
+  max-width: 15vw;
+  overflow: hidden;
+  text-overflow: ellipsis;  
 }
 
 .avatar{
+  margin-left: 20px;
   width: 60px;
   height: 60px;
-}
-
-.avatar>div:nth-child(2) {
-  background: url(../images/avatar.svg) !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
+  margin-right: 5px;
 }
 
 .avatar>div:nth-child(1){
@@ -179,38 +252,24 @@ header .lknick .nickname {
 }
 
 .avatar img {
-  width: 60px;
-  height: 60px;
+  width: 58px;
+  height: 58px;
   border-radius: 60px;
+  border: 2px solid #000000;
 }
 
-
-/* header .lknick>div {
-  padding-top: 5px;
-  display: flex;
-  justify-content: center;
-  flex-grow: 33;
-} */
-
-header .search{
-  background: url(../images/search_window.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top 0px right 0px;
-  width: 317px;
-  height: 60px;
-}
-
-header .search>div {
-  padding: 0 0 10px 12px;
+.coach .search>div {
   color: gray;
   font-weight: bold;
   width: 235px;
-  padding-left: 0px;
-  margin-left: 43px;
 }
 
-header .search input{
+.coach .search img {
+  height: 30px;
+  margin-left: 10px;
+}
+
+.coach .search input{
   width: 235px;
   text-align: center;
   background: unset;
@@ -220,27 +279,34 @@ header .search input{
 }
 
 @media screen and (max-width: 786px) {
-  .lknick>*{
+
+  header .search {
     display: none;
-    height: 0px;
-    width: 0px;
+    border: 0;
   }
-  header .lknick{
-    height: 0px;
-    width: 0px;
+
+  header .lknick>div{
+    max-width: 30vw;
+  }
+
+  header .toggle_theme{
     display: none;
+    border: 0;
   }
+
+  header .hide {
+    display: none;
+    border: 0;
+  }
+
+  header .hamburger{
+    display: unset;
+    border: 2px solid #000000;
+  }
+
 }
 
 @media screen and (max-width: 536px) {
-  header .search{
-    background: url(../images/search_window_mobile.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top 0px right 0px;
-    width: 202.4px;
-    height: 60px;
-  }
 
   header .logo img {
     height: 54px;
@@ -255,22 +321,8 @@ header .search input{
 
 
 
-.strange {
-  background: url(../images/separator.svg);
-  background-color: rgba(0, 0, 0, 0);
-  width: 100vw;
-  height: 10px;
-  /* background-color: red; */
-  background-size: 162px 10px;
-}
-
 /* main============================================================ */
 
-main {
-  margin: 0 5%;
-  margin-top: 100px;
-  /* background-color: blanchedalmond; */
-}
 
 .profiles {
   display: flex; 
@@ -281,14 +333,10 @@ main {
 .listing {
   width: 200px;
   height: 300px;
-  display: inline-block;
-  background: url(../images/portrait.svg) no-repeat center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 5px 0px;
   margin: 10px 50px;
-  filter: drop-shadow( 3px 3px 2px rgba(34, 60, 80, 0.4));
-  /* background-color: aliceblue; */
+  background-color: antiquewhite;
+  border: 2px solid #000000;
 }
 
 .listing {
@@ -308,8 +356,7 @@ main {
 
 .listing:hover {
   margin-top: 5px;
-  /*background-color: rgb(71, 59, 248);*/
-  /* box-shadow: 5px 5px 6px black; */
+  transform: rotate(3deg);
   filter: drop-shadow( 10px 10px 4px rgba(34, 60, 80, 0.5));
   margin-bottom: 15px;
 }
@@ -328,11 +375,8 @@ main {
 }
 
 .char_logo {
-  margin-top: 6px;
   width: 165px;
   height: 193px;
-  padding-right: 3px;
-  /* background-color: red; */
 }
 
 .char_logo>img{
@@ -347,12 +391,14 @@ footer {
   background-color: black;
   color: white;
   height: 110px;
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   font-size: 14px;
+  bottom: -3px;
+  width: 100%;
 }
 
 footer>div{
@@ -382,11 +428,24 @@ footer>div{
 
 
 
+.hamburger_main{
+  display: none;
+  flex-direction: column;
+  margin-top: 70px;
+  background-color: #ffffff;
+}
 
 
-
-
-
+.hamburger_main .coach {
+  margin: 0 5%;
+  height: 70px;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  filter: drop-shadow( 3px 3px 2px rgba(34, 60, 80, 0.4));
+}
 
 
 

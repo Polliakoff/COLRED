@@ -11,17 +11,23 @@
     <link rel="icon" href="{% static 'main/images/favicon.ico' %}" type="image/x-icon">
     <link rel="shortcut icon" href="{% static 'main/images/favicon.ico' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'main/css/floating_search.css' %}">
+    <link rel="stylesheet" id="head_black" href="{% static 'main/css/black.css' %}" type="text/css" />
     {% block head_input %}{% endblock %}
     {% block list %}{% endblock %}
 </head>
 
 <body>
-        {% block header %}{% endblock %}
-
-    <main>
-        {% block content %}{% endblock %}
-    </main>
-    <footer>
+    {% block header %}{% endblock %}
+    <div class="mainf">
+        <div class="triangle-bottomleft">
+        </div>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <div class="triangle-topright"></div>    
+    </div>
+    
+    <!-- <footer>
         <div class="about">
             <p>Поляков Д.</p>
             <p>Илюшик С.</p>
@@ -33,7 +39,7 @@
             Слава свободному софту!
             <div class="company-logo"></div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>

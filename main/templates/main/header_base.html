@@ -8,60 +8,96 @@
 
 {% block header %}
 {% load static %}
-<div class="floating_search shadow">
-    <div class="search_field">
-        {% for chr in characters %}
-        <a filter="{{chr.name}}" href="/redactor/{{chr.usr.id}}/{{chr.id}}">
-            <div class="search_listing">
-                <div class="char_logo">
-                    <img src='/media/{{chr.portrait}}'
-                        alt="+">
-                </div>
-                <div>{{chr.name}}</div>
+
+
+<div class="hamburger_main" style="display: unset;">
+    <div class="coach">
+        <div class="toggle_theme container">
+            <input type="checkbox" name="toggle" id="toggle-button1" class="toggle-button">
+        </div>
+        <div class="search">
+            <img src="/static/main/images/search.png" alt="" srcset="">
+            <div>
+                <input type="text" placeholder="поиск" id="hamb_search">
             </div>
-        </a>
-        {% endfor %}
-        <a filter="" href="/create_new" class="new_one">
-            <div class="search_listing">
-                <div class="char_logo">
-                    <img src="https://img2.freepng.ru/20180425/fww/kisspng-plus-and-minus-signs-5ae10740998772.7506031915246968966289.jpg"
-                        alt="+">
-                </div>
-                <div>Создать нового!</div>
-            </div>
-        </a>
+        </div>
     </div>
-    <div class="strange"></div>
+    
+
+
+    <div class="floating_search shadow" id="search_operand">
+        <div class="search_field">
+            {% for chr in characters %}
+            <a filter="{{chr.name}}" href="/redactor/{{chr.usr.id}}/{{chr.id}}">
+                <div class="search_listing">
+                    <div class="char_logo">
+                        <img src='/media/{{chr.portrait}}' alt="+">
+                    </div>
+                    <div>{{chr.name}}</div>
+                </div>
+            </a>
+            {% endfor %}
+            <a filter="" href="/create_new" class="new_one">
+                <div class="search_listing">
+                    <div class="char_logo">
+                        <img src="https://img2.freepng.ru/20180425/fww/kisspng-plus-and-minus-signs-5ae10740998772.7506031915246968966289.jpg"
+                            alt="+">
+                    </div>
+                    <div>Создать нового!</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer style="display: none;">
+        <div class="about">
+            <p>Шилакин И.</p>
+            <br>
+            <p>Группа АА-19-05</p>
+        </div>
+        <div class="company-info">
+            Слава свободному софту!
+            <div class="company-logo"></div>
+        </div>
+    </footer>
+
 </div>
+
 <header id="the_header">
     <div class="coach">
         <div class="logo">
             <a href="{% url 'main_page' %}">
                 <img src="{% static 'main/images/logo.png' %}" alt="COLRED">
             </a>
-            <div>Создатель и редактор персонажей для Pathfinder 2e</div>
+            <div>Создатель и редактор персонажей для GURPS 4e</div>
         </div>
-        <div class="hide"></div>
-        <div class="search shadow">
+
+        <div class="toggle_theme container">
+            <input type="checkbox" name="toggle" id="toggle-button2" class="toggle-button">
+        </div>
+        <div class="nobrdr"></div>
+        <div class="search">
+            <img src="/static/main/images/search.png" alt="" srcset="">
             <div>
                 <input type="text" placeholder="поиск" id="main_search">
             </div>
         </div>
-        <div class="">
-            <div class="filter_fix lknick">
-                <div class="nickname"></div>
-                <div>{% block username %}{% endblock %}</div>
+
+        <div class="lknick">
+            <div>
+                {% block username %}{% endblock %}
             </div>
-            <a href="{% url 'lk' %}" class="avatar filter_fix">
+            <a href="{% url 'lk' %}" class="avatar">
                 <div>
                     <img src="{% get_static_prefix %}{% block ava_image %}{% endblock %}" alt="ava">
                 </div>
-                <div></div>
             </a>
+        </div>
+        <div class="hamburger">
+            <img src="/static/main/images/hamb.png" alt="" srcset="">
         </div>
 
     </div>
-    <div class="strange"></div>
+    <!-- <div class="strange"></div> -->
 </header>
 <script type="text/javascript" src="{% static 'main/js/search.js' %}"></script>
 {% endblock %}

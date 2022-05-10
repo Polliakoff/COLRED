@@ -1,0 +1,98 @@
+header img{
+    filter: invert(1);
+}
+header .lknick img{
+    filter: invert(0);
+}
+
+#the_header{
+    background-color: black;
+}
+
+.coach > div{
+    background-color: #253277;
+    border: 2px solid #fff;
+}
+
+.nobrdr{
+    border: 0 !important;
+}
+
+div{
+    color: white;
+}
+
+.listing{
+    border: 2px solid #ffffff;
+    background-color: #253277;
+}
+
+main{
+    background-color: black;
+}
+
+.triangle-bottomleft{
+    border-bottom: 40px solid black;
+}
+
+.triangle-topright{
+    border-top: 40px solid black;
+}
+
+input, select, textarea{
+    color: #ffffff;
+}
+
+.search_field{
+    background-color: rgb(0, 0, 0);
+    border: 0;
+}
+
+
+.search_listing{
+    background-color:#253277;
+    border: 2px solid #ffffff;
+}
+
+
+.hamburger_main{
+    background-color: black;
+}
+
+.hamburger_main .search img{
+    filter: invert(1);
+}
+
+.form_layout img{
+    filter: invert(1);
+}
+
+.py_form{
+    background-color:#253277;
+    border: 2px solid #ffffff;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover{
+    color: #fff !important;
+}
+
+.logo img{
+    filter: invert(1);
+}
+
+.avatar img{
+    border: 2px solid #ffffff;
+}
+
+
+.book .char_logo{
+    border: 2px solid #ffffff !important;
+}
+
+.book input, select, textarea{
+    background-color: #253277 !important;
+}
